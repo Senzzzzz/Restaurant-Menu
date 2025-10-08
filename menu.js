@@ -155,7 +155,6 @@ const navbar = document.querySelector(".navbar");
           } 
           return value
         }, ["main"]);
-        console.log(categories);
         const categoryBtns = categories.map((category) => {
           return `
           <button class="filter-btn" data-id="${category}">
@@ -169,6 +168,7 @@ const navbar = document.querySelector(".navbar");
         filterBtn.forEach((btn) => {
         btn.addEventListener("click", (e) => {
           const category = e.target.dataset.id;
+          console.log(category)
           const menuCategory = foodList.filter((menuItems) => {
             if (menuItems.category === category) {
               return menuItems
