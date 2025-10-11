@@ -1,10 +1,11 @@
 body {
+  background-image: url("background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   padding: 0;
-}
-
-* {
-  box-sizing: border-box;
+  height: 100%;
 }
 
 header {
@@ -45,11 +46,9 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  margin: 0 auto;
-  position: relative;
-  top: 80px;
-  gap: 20px;
-  width: 75%;
+  margin: 80px auto 0 auto; /* replace top:80px */
+  gap: 50px;
+  padding: 150px;
 }
 
 .dish-image {
@@ -81,9 +80,9 @@ header {
 }
 
 
-
 .dish-description {
-  font-size: 13px;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 830px) {
